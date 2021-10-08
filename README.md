@@ -1,2 +1,2 @@
 # shoppinglist
-Nao esquece de trazer o pao! 
+Não esquece de trazer o pão!
