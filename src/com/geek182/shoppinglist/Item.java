@@ -1,7 +1,7 @@
 package com.geek182.shoppinglist;
 import java.util.ArrayList;
 
-public class Item extends List {
+public class Item {
     private String ItemName;
     private int quantity;
     ArrayList<String> Itens = new ArrayList<String>();
@@ -20,9 +20,9 @@ public class Item extends List {
         }
 
     public void GetItens() {
+        System.out.println("Currently on your list");
         for (int i = 0; i < Itens.size(); i++) {
             System.out.println(Itens.get(i));
-            //System.out.println("Currently on your list");
         }
     }
     public void DeleteItem() {
