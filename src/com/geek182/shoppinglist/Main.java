@@ -4,34 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 	// nao esquece de trazer o pao!!
+        List mylist3 = new List("Leandro","Weekly","for the week");
+        Item pao = new Item("Pao",2);
+        Item milk = new Item("Milk", 1);
+        Item juice = new Item("Apple Juice", 1);
+        mylist3.AddItems(pao);
+        mylist3.AddItems(milk);
+        mylist3.AddItems(juice);
+        mylist3.GetItems();
 
-        //List mylist = new List();
-        //mylist.CreateList("Leandro", "Weekly", "List for week");
-        //mylist.GetList("Weekly");
-        //mylist.AddItem("Pao", 1);
-        //mylist.AddItem("Milk", 2);
-        //mylist.GetItens();
-
-/*        Item mylist = new Item();
-        mylist.CreateList("Leandro", "Weekly", "List for week");
-        mylist.GetList("Weekly");
-        mylist.AddItem("Pao",2);
-        mylist.AddItem("Milk",1);
-        mylist.GetItens();
-*/
-        List mylist = new List();
-        mylist.CreateList("Leandro","Weekly","List for week");
-        mylist.CreateItens("Pao",2);
-        mylist.CreateItens("Milk",2);
-        mylist.CreateItens("Kaas",1);
-        mylist.GetItens();
-
-        List mylist2 = new List();
-        mylist2.CreateList("Leo","test", "test2");
-        mylist2.CreateItens("soup",2);
-        mylist2.GetItens();
-
-
+        List mylist4 = new List("Leandro","FridayNight","Friday night snacks");
+        Item pizza = new Item("Pizza", 2 );
+        Item soda = new Item("Soda",10);
+        mylist4.AddItems(pizza);
+        mylist4.AddItems(soda);
+        mylist4.GetItems();
 
     }
 }
