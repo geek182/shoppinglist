@@ -21,20 +21,29 @@ public class List {
         this.ListName = ListName;
         System.out.println("The list was created by: " + Author);
     }
-    public void DeleteList(){
+    public void DeleteList(List list){
+
     }
     public void AddItems(Item item){
         items.add(item);
     }
 
     public void GetItems() {
-        System.out.println("Currently on your list");
-        for (int i = 0; i < items.size(); i++) {
-                items.get(i).GetItemName();
+        if (items.isEmpty()){
+            System.out.println("Your list " + ListName + " is empty");
         }
-        System.out.println("########");
+        else {
+            System.out.println("Currently on your list: " + ListName);
+            for (int i = 0; i < items.size(); i++) {
+                items.get(i).GetItemName();
+            }
+            System.out.println("########");
+        }
     }
 
+    public void DeleteItem(Item item){
+        items.remove(item);
+    }
     public void DeleteAllItems(){
         items.clear();
     }
